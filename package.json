@@ -1,0 +1,11 @@
+{
+  "name": "kalapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "bin": {
+    "kalapi": "./bin/kalapi.js"
+  },
+  "author": "Kiran Chauhan",
+  "license": "ISC"
+}
