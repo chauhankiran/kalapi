@@ -11,5 +11,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(3000, () => {
-    console.log("applicatio is running...");
+    console.log("Application is running at \x1b[36mhttp://localhost:3000\x1b[0m");
 });
