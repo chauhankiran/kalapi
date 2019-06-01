@@ -16,9 +16,11 @@ function main() {
     } else {
         switch (args[2]) {
             case "--help":
+            case "-h":
                 usage();
                 break;
             case "--version":
+            case "-v":
                 version();
                 break;
             default:
