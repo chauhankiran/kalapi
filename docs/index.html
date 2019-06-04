@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Kalapi ~ Yet another simple express generator with ejs.</title>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400,700');
+
+            *,
+            *::before,
+            *::after {
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background-color: #f1f1f1;
+                color: rgba(0, 0, 0, 0.5);
+                font-family: 'Nanum Gothic Coding', monospace;
+                font-size: 1rem;
+                font-weight: 400;
+                font-style: normal;
+                margin: 0 auto;
+                padding: 1rem;
+                width: 100%;
+                max-width: 39rem;
+                line-height: 1.4;
+            }
+            header {
+                text-align: center;
+            }
+            h1,
+            h2 {
+                font-weight: 400;
+                margin-bottom: 0;
+            }
+            em {
+                font-style: normal;
+                color: rgba(0, 0, 0, 0.7);
+            }
+            code,
+            pre {
+                color: #585859;
+                font-family: 'Nanum Gothic Coding', monospace;
+                font-size: inherit;
+            }
+            .code {
+                overflow: auto;
+                width: auto;
+                border: solid #585859;
+                border-width: .1em .1em .1em .1em;
+                padding: .2em .6em;
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+            }
+            hr {
+                border: 0;
+                height: 1px;
+                background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Kalapi</h1>
+            <p>Yet another simple express generator with ejs.</p>
+        </header>
+        <main>
+            <p>
+                Let's say you are learning Express and I asked you create a simple without-database website using Express. What possibly you will build? Your application will have an <code>app.js</code>, <code>public</code> folder which will contains public assets and <code>views</code> folder with needed templates. You can do it by hand or you can have Kalapi.
+            </p>
+
+            <p>
+                Kalapi is <em>yet another simple express generator with ejs</em>.
+            </p>
+
+            <p>
+                <em>We already have <code>express-generator</code>, why we need this?</em> This generator is created as an intermediate step of learning Express and using <code>express-generator</code>. You will start with plain Express, you understand all the details process and then you will use Kalapi. Once you familiar with Kalapi, you will find the limitation of it and then will move on to <code>express-generator</code>.
+            </p>
+
+            <h2>Installation</h2>
+
+            <p>
+                For GNU/Linux and MacOS users,
+            </p>
+
+            <div class="code"><pre style="margin: 0; line-height: 125%"><span style="color: #aa0000">$ </span>sudo npm install kalapi -g</pre></div>
+
+            <p>
+                For Windows users,
+            </p>
+
+            <div class="code"><pre style="margin: 0; line-height: 125%"><span style="color: #aa0000">&gt; </span>npm install kalapi -g</pre></div>
+
+            <p>
+                After successful installation, you will get <code>kalapi</code> command. Running version command will confirm the installation.
+            </p>
+
+            <div class="code"><pre style="margin: 0; line-height: 125%"><span style="color: #aa0000">$ </span>kalapi --version
+ 
+  You are using v0.0.1 of Kalapi
+</pre></div>
+
+            <h2>Getting Started</h2>
+
+            <p>
+                Once you have <code>kalapi</code> on your local machine, using it to scaffolding your project is quite easy. Just write <code>kalapi</code> followed by the name of project.
+            </p>
+
+            <div class="code"><pre style="margin: 0; line-height: 125%"><span style="color: #aa0000">$ </span>kalapi project</pre></div>
+
+            <p>
+                This will create <code>project</code> project/folder in current working directory with following folders and files inside of it.
+            </p>
+            
+            <div class="code"><pre style="margin: 0; line-height: 125%">project/
+├── public/
+│   ├── css/
+│   │    └── main.css   
+│   └── js/
+│        └── main.css
+├── views/
+│   ├── footer.ejs
+│   ├── head.ejs
+│   └── index.ejs
+└── app.js
+└── package.json
+</pre></div>
+
+            <p>
+                Finally, you need to install project dependencies and you are ready to go.
+            </p>
+
+            <div class="code"><pre style="margin: 0; line-height: 125%"><span style="color: #aa0000">$ </span><span style="color: #00aaaa">cd </span>project
+<span style="color: #aa0000">$ </span>npm install
+<span style="color: #aa0000">$ </span>npm start
+</pre></div>
+
+            <p>
+                Your web server is ready and listening at <code>http://localhost:3000</code>.
+            </p>
+            
+            <h2>License</h2>
+            
+            <pre>Copyright (c) 2019 Kiran Chauhan (https://chauhankiran.github.io)
+
+Kalapi is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Kalapi is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Kalapi. If not, see &lt;https://www.gnu.org/licenses/&gt;.</pre>
+
+            <hr>
+
+            <footer>
+                &copy; 2019 Kiran Chauhan
+            </footer>
+        </main>
+    </body>
+</html>
