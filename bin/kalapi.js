@@ -7,11 +7,11 @@ const usage = require("../lib/help.js");
 const version = require("../lib/version.js");
 const application = require("../lib/index.js");
 
-// The starting points.
+
 function main() {
     var args = process.argv;
-    
-    if ( args.length > 3 ) {
+
+    if ( args.length > 4 ) {
         usage();
     } else {
         switch (args[2]) {
@@ -24,8 +24,12 @@ function main() {
                 version();
                 break;
             default:
-                application(args[2]);
-                break;           
+                if (args[3] === "-b") {
+                    application(args[2], "b");
+                } else {
+                    application(args[2]);
+                }
+                break;
         }
     }
 }

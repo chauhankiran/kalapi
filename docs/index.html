@@ -103,8 +103,8 @@
             </p>
 
             <div class="code"><pre style="margin: 0; line-height: 125%"><span style="color: #aa0000">$ </span>kalapi --version
- 
-  You are using v0.0.1 of Kalapi
+
+  You are using v0.0.3 of Kalapi
 </pre></div>
 
             <h2>Getting Started</h2>
@@ -116,13 +116,19 @@
             <div class="code"><pre style="margin: 0; line-height: 125%"><span style="color: #aa0000">$ </span>kalapi project</pre></div>
 
             <p>
-                This will create <code>project</code> project/folder in current working directory with following folders and files inside of it.
+                This will create <code>project</code> project/folder in current working directory with following folders and files inside of it. Optionally, you can pass <code>-b</code> with name of project to get the Bootstrap framework for your front-end.
             </p>
-            
+
+            <div class="code"><pre style="margin: 0; line-height: 125%"><span style="color: #aa0000">$ </span>kalapi project -b</pre></div>
+
+            <p>
+                Following is the normal file structure, you will get after scaffolding the project using <code>kalapi</code> without <code>-b</code> flag.
+            </p>
+
             <div class="code"><pre style="margin: 0; line-height: 125%">project/
 ├── public/
 │   ├── css/
-│   │    └── main.css   
+│   │    └── main.css
 │   └── js/
 │        └── main.css
 ├── views/
@@ -145,9 +151,9 @@
             <p>
                 Your web server is ready and listening at <code>http://localhost:3000</code>.
             </p>
-            
+
             <h2>License</h2>
-            
+
             <pre>Copyright (c) 2019 Kiran Chauhan (https://chauhankiran.github.io)
 
 Kalapi is free software: you can redistribute it and/or modify
